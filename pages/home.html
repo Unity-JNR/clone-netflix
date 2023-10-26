@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body style="overflow-x: hidden;">
+    <header id="myHeader">
+        <a href="#" class="netflix-logo"><img src="/images/netflix.png" alt="Netflix logo"/></a>
+        <ul class="navigation-list">
+          <li>Home</li>
+          <li>My list</li>
+          <li>coming soon</li>
+        </ul>
+  
+        <div class="search-and-dropdown">
+          <div class="search">
+            <input type="search" placeholder="Titles, people, genres" id="search"/>
+            <i class="fa fa-search"></i>
+          </div>
+          <div class="dropdown">
+            <button class="pfp-button"><img src="/images/pfp.png" alt="profile picture" class="pfp"></button>
+            <div class="dropdown-content">
+              <p>unitydemas</p>
+              <a href="/index.html">Logout</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main id="myMain">
+        <section class="banner" >
+          <!-- <video class="bg" autoplay muted loop>
+            <source :src="/videos/house-of-the-dragon.mp4" type="video/mp4">
+          </video> -->
+          <video src=" /videos/house-of-the-dragon.mp4" autoplay muted loop class="bg"></video>
+         
+          <div class="content">
+            <!-- <img src="/images/house-of-the-dragon.png" class="movieTitle" :alt="item.name" /> -->
+            <img src="/images/house-of-the-dragon.png" alt="" class="movieTitle" id="i">
+            <p>the prequel of game of thrones</p>
+            <div class="buttons">
+            <button class="button play"><a :href="/videos/house-of-the-dragon.mp4" target="_blank"><i class="fa fa-play"></i> Play</a></button>
+            <button class="button info" id="myBtn"><i class="fa fa-plus"></i> More Info</button>
+  
+          <!-- Modal -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <div class="modal-banner">
+                <span class="close">&times;</span>
+                <video class="banner-video" autoplay muted loop>
+                  <source :src="item.preview" type="video/mp4">
+                </video>
+              <div class="modal-header-content">
+                <span><img :src="item.poster" class="modalMovieTitle" :alt="item.name" /></span>
+                <div class="modal-buttons">
+                  <button class="button modal-play"><a :href="item.trailer" target="_blank"><i class="fa fa-play"></i> Play</a></button>
+                  <button class="modal-add"><i class="fa fa-plus"></i></button>
+                </div>
+              </div>
+              </div>
+              <h3>About {{ item.name }}</h3>
+              <div class="modal-body">
+                <div class="modal-description">
+                <p>{{ item.description }}</p>
+              </div>
+              <div class="modal-meta">
+                <p>Release: {{ item.releaseDate }}</p>
+                <p>Runtime: {{ item.runtime }}</p>
+                <p>Rating: {{ item.rating }}</p>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  <section>
+        <div id="content-grid">
+          <div class="container-heading">Action</div>
+            <div class="container">
+                <div class="box">
+          <img src="/movies/equaliser.jpg" alt="action movies" class="bg ">
+          <img src="/movies/Deadlock.jpg" alt="action movies" class="bg">
+          <img src="/movies/killbill.jpg" alt="action movies" class="bg">
+          <img src="/movies/Freedom.jpg" alt="action movies" class="bg">
+          <img src="/movies/SuicideSquad.jpg" alt="action movies" class="bg">
+          <img src="/movies/theBestMan.jpg" alt="action movies" class="bg">
+        </div>
+            </div>
+        </div>
+
+          <div class="container-heading">Comedy</div>
+            <div class="container">
+                <div class="box">
+           <img src="/movies/grown-ups.jpg" alt="comdey movies" class="bg">
+           <img src="/movies/Houseparty.jpeg" alt="comdey movies" class="bg">
+           <img src="/movies/littleMan.jpg" alt="comdey movies" class="bg">
+           <img src="/movies/millers.jpg" alt="comdey movies" class="bg">
+           <img src="/movies/stepB.jpg" alt="comdey movies" class="bg">
+           <img src="/movies/ice.jpg" alt="comdey movies" class="bg">
+        </div>
+            </div>
+        </div>
+         
+  
+          <!-- <div class="container-heading">Horror</div>
+            <div class="container">
+              <img src="/movies/chucky.jpg" alt="Horror movies" class="bg">
+              <img src="/movies/terrifer.jpeg" alt="Horror movies" class="bg">
+              <img src="/movies/frightNight.jpg" alt="Horror movies" class="bg">
+              <img src="/movies/conjuring_ver2.jpg" alt="Horror movies" class="bg">
+              <img src="/movies/theNun.jpg" alt="Horror movies" class="bg">
+              <img src="/movies/hellraiser.jpg" alt="Horror movies" class="bg">
+            </div>
+        </div>
+  -->
+  <div class="container-heading">Horror</div>
+  <div class="container">
+    <div class="box">
+      <img src="/movies/chucky.jpg" alt="Horror movies" class="bg">
+      <img src="/movies/terrifer.jpeg" alt="Horror movies" class="bg">
+      <img src="/movies/frightNight.jpg" alt="Horror movies" class="bg">
+      <img src="/movies/conjuring_ver2.jpg" alt="Horror movies" class="bg">
+      <img src="/movies/theNun.jpg" alt="Horror movies" class="bg">
+      <img src="/movies/hellraiser.jpg" alt="Horror movies" class="bg">
+    </div>
+  </div>
+
+  
+
+        
+         
+         
+            
+            
+        </section>
+      </main>
+  
+      <footer id="myFooter">
+        <div class="social-links">
+          <a href="https://www.instagram.com/oliver.vermeulen/" class="social-link" target="_blank"><i class="fab fa-instagram icon" alt="Instagram"></i></a>
+          <a href="https://github.com/OliverVermeulen" class="social-link" target="_blank"><i class="fab fa-github icon" alt="GitHub"></i></a>
+          <a href="https://www.linkedin.com/in/oliver-vermeulen-311221222/" class="social-link" target="_blank"><i class="fab fa-linkedin-in icon" alt="Linkedin"></i></a>
+        </div>
+  
+        <ul class="footer-grid">
+          <li class="footer-grid-item">Audio and Subtitles</li>
+          <li class="footer-grid-item">Audio Description</li>
+          <li class="footer-grid-item">Help Centre</li>
+          <li class="footer-grid-item">Gift Cards</li>
+  
+          <li class="footer-grid-item">Media Centre</li>
+          <li class="footer-grid-item">Investor Relations</li>
+          <li class="footer-grid-item">Jobs</li>
+          <li class="footer-grid-item">Terms of Use</li>
+  
+          <li class="footer-grid-item">Privacy</li>
+          <li class="footer-grid-item">Legal Notices</li>
+          <li class="footer-grid-item">Cookie Preferences</li>
+          <li class="footer-grid-item">Corporate Information</li>
+        </ul>
+  
+        <p>© 2022-2022 Viswinkel, Ltd.</p>
+      </footer> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
